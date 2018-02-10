@@ -78,7 +78,6 @@ export default  class Slider extends React.Component {
                 this.turn()
             }}>
                 <SliderList ref="list" index={this.state.index} items={this.state.items} speed={this.state.speed}/>
-
                 {this.state.arrows ? <SliderArrows ref="sliderArrows" go={this.go}/> : null}
                 {this.state.dots ?
                     <SliderDots ref="dots" go={this.go} items={this.state.items} index={this.state.index}/> : null}
