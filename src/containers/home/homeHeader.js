@@ -39,10 +39,13 @@ export default class homeHeader extends React.Component {
                 node.style.display = "none"
             }}>
                 {(state)=>(
-                    <ul className="header-menu" style={{...defalutStyle, ...transitionStyle[state]}} onClick={(e)=> {
-                        this.props.selectCurrentLesson(e.target.dataset.type)
-                        this.changeShow()
-                    }}>
+                    <ul className="header-menu"
+                        style={{...defalutStyle, ...transitionStyle[state]}}
+                        onClick={(e)=> {
+                            this.props.selectCurrentLesson(e.target.dataset.type)
+                            this.changeShow()
+                        }}
+                    >
                         <li data-type="all">全部课程</li>
                         <li data-type="react">react课程</li>
                         <li data-type="Vue">Vue课程</li>
