@@ -69,7 +69,7 @@ module.exports = [
         poster: "javascript:;",
         url: "http://pic6.ablesky.cn/content/pic/org_template_index_picture/2017/12/06/31c3c918-4b34-4244-a903-711f610123e5.png",
         price: "232",
-        type: "react"
+        type: "Vue"
     },
     {
         id: 9,

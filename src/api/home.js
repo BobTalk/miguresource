@@ -13,3 +13,7 @@ export function getSliders() {
 export function getLessonsAll(offset, limit, type) {
     return axios.get(`/lessons/${offset}/${limit}/${type}`)
 }
+/*获取一门课程*/
+export function getLessonOne(id) {
+    return axios.get(`/lesson/${id}`)
+}

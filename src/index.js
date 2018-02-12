@@ -10,6 +10,8 @@ import App from "./containers/App"
 import Detail from "./containers/detail/Detail"
 import {Provider} from "react-redux"
 import store from "./store"
+import Login from "./containers/login/Login"
+import Register from "./containers/reg/Register"
 
 //轮播图组件
 import Slider from "./component/Slider/Slider"
@@ -21,6 +23,8 @@ ReactDOM.render(<Provider store={store}>
                 <Route path="/profile" component={Profile}/>
                 <Route path="/lesson" component={Lesson}/>
                 <Route path="/detail/:lessonId" component={Detail}/>
+                <Route path="/login" component={Login}></Route>
+                <Route path="/register" component={Register}></Route>
             </Switch>
         </App>
     </Router>
