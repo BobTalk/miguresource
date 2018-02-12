@@ -7,6 +7,7 @@ import Home from "./containers/home/Home"
 import Profile from "./containers/profile/Profile"
 import Lesson from "./containers/lesson/lesson"
 import App from "./containers/App"
+import Detail from "./containers/detail/Detail"
 import {Provider} from "react-redux"
 import store from "./store"
 
@@ -19,6 +20,7 @@ ReactDOM.render(<Provider store={store}>
                 <Route path="/" exact={true} component={Home}/>
                 <Route path="/profile" component={Profile}/>
                 <Route path="/lesson" component={Lesson}/>
+                <Route path="/detail/:lessonId" component={Detail}/>
             </Switch>
         </App>
     </Router>

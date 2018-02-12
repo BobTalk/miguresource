@@ -29,7 +29,7 @@
   },
   "scripts": {
     "build": "webpack -p",
-    "dev": "webpack-dev-server --hot --open --port=9090 --inline --content-base ./dist/",
+    "dev": "webpack-dev-server --hot --port=9090 --inline --content-base ./dist/",
     "deploy": "webpack -p --progress --config webpack.config.js"
   },
   "dependencies": {
