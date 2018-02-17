@@ -33,8 +33,8 @@ export default class Register extends React.Component {
                         </li>
                         <li>
                             <button onClick={()=> {
-                                alert(this.password)
-                                this.props.registerAction(this.username.val, this.password.val, this.props.history)
+                               /* alert(this.password)*/
+                                this.props.registerAction(this.username.value, this.password.value, this.props.history)
                             }}>注册
                             </button>
                         </li>

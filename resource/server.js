@@ -63,7 +63,7 @@ app.post("/register", function (req, res) {
     if (user) {
         res.json({user: null, msg: "用户已存在!!!", success: "", error: 1})
     } else {
-        password = crypto.createHash("md5").update("'"+password+"'").digest("base64");
+        password = crypto.createHash("md5").update("'" + password + "'").digest("base64");
         userList.push({username, password});
         res.json({user: null, msg: "", success: "恭喜注册成功!!!", error: 0})
     }
@@ -74,7 +74,8 @@ app.post("/register", function (req, res) {
  * */
 app.post("/login", function (req, res) {
     let {username, password} = req.body;
-    password = crypto.createHash("md5").update("'"+password+"'").digest("base64");
+    console.log(userList + " ==== " + req.body.username + " login")
+    password = crypto.createHash("md5").update("'" + password + "'").digest("base64");
     let user = userList.find(item=>(item.username == username) && (item.password == password));
     if (user) {
         res.json({user: username, msg: "", success: "成功", error: 0})
